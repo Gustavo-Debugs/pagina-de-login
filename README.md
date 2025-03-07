@@ -23,10 +23,5 @@ Este é um projeto simples de página de login e cadastro com animação para al
 
 ---
 
-## 📷 Preview
-
-<img src="screenshot.png" alt="Login Page Preview" width="600">
-
----
 
 
