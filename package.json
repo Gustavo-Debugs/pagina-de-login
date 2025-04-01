@@ -1,6 +1,7 @@
 {
   "name": "pagina-de-login",
   "version": "1.0.0",
+  "type": "module",
   "description": "Este é um projeto simples de página de login e cadastro com animação para alternar entre os formulários de **Sign In** e **Sign Up**. A interface é estilizada com **CSS moderno**, utiliza **FontAwesome** para ícones e um script em **JavaScript** para a animação.\r ---\r  Funcionalidades\r ✔️ Alternância suave entre Login e Cadastro\r ✔️ Ícones nos campos de entrada\r ✔️ Animações para transição\r ✔️ Design responsivo\r ---\r 🛠️ Melhorias Futuras\r ✅ Adicionar validação de campos\r ✅ Criar integração com um backend\r ✅ Melhorar responsividade para telas menores\r ---\r ## 🖥️ Tecnologias Utilizadas",
   "main": "index.js",
   "scripts": {
