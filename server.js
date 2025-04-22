@@ -19,7 +19,7 @@ app.post("/usuarios", async (req, res) => {
 });
 
 app.get("/usuarios", async (req, res) => {
-  let user = []
+  let users = []
 
   if(req.query){
     users = await prisma.user.findMany({
@@ -57,7 +57,7 @@ app.delete("/usuarios/:id", async (req, res) => {
     where: {
       id: req.params.id,
     },
-  });
+  })
 
   res.status(200).json({ message: 'Usuario deletado com sucesso' });
 });
