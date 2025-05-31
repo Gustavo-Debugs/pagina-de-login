@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+/* Define um reset básico para todos os elementos */
+* {
+    margin: 0;              /* Remove margem padrão */
+    padding: 0;             /* Remove padding padrão */
+    box-sizing: border-box; /* Inclui padding e border dentro da largura/altura */
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão */
+}
+
+/* Estilo do corpo da página */
+body {
+    width: 100vw;           /* Largura total da viewport */
+    height: 100vh;          /* Altura total da viewport */
+    display: flex;          /* Usa flexbox para centralizar o conteúdo */
+    align-items: center;    /* Centraliza verticalmente */
+    justify-content: center;/* Centraliza horizontalmente */
+}
+
+/* Container principal que envolve todo o formulário */
+.container {
+    background-color: whitesmoke; /* Cor de fundo clara */
+    padding: 6px;                 /* Espaçamento interno */
+    width: 350px;                 /* Largura fixa */
+    height: 450px;                /* Altura fixa */
+    display: flex;                /* Flexbox para organização interna */
+    flex-direction: column;       /* Itens em coluna */
+    align-items: center;          /* Centraliza horizontalmente */
+    position: relative;           /* Para posicionamento absoluto dos forms */
+    overflow: hidden;             /* Esconde overflow para animações */
+    border-radius: 10px;          /* Bordas arredondadas */
+    box-shadow: 0 5px 15px 0 darkgray; /* Sombra para profundidade */
+}
+
+/* Formulário de login e cadastro */
+form {
+    position: absolute;           /* Posicionamento absoluto para animação */
+    margin-top: 80px;             /* Espaçamento do topo */
+    transition: 0.5s;             /* Animação suave ao trocar */
+    width: 300px;                 /* Largura fixa do form */
+    height: 400px;                /* Altura fixa do form */
+
+    display: flex;                /* Flexbox para organizar conteúdo */
+    flex-direction: column;       /* Organiza inputs e botões em coluna */
+    align-items: center;          /* Centraliza horizontalmente os itens */
+    justify-content: center;      /* Centraliza verticalmente os itens */
+}
+
+/* Container dos botões "Sign in" e "Sign up" */
+.buttonsForm {
+    margin-top: 40px;             /* Espaço acima */
+    position: relative;           /* Referência para o indicador de botão ativo */
+    border-radius: 30px;          /* Bordas arredondadas */
+    box-shadow: 0 0 7px 0 blueviolet; /* Sombra para destacar */
+}
+
+/* Indicador colorido que mostra qual botão está ativo */
+.bntColor {
+    position: absolute;           /* Posicionamento dentro do container */
+    width: 108px;                 /* Largura do indicador */
+    height: 100%;                 /* Altura igual ao container */
+    background: linear-gradient(to right, #5956e9, #a963f8); /* Gradiente */
+    border-radius: 30px;          /* Bordas arredondadas */
+    transition: 0.3s;             /* Animação suave de movimento */
+}
+
+/* Estilo dos botões de troca entre login e cadastro */
+.buttonsForm button {
+    cursor: pointer;              /* Cursor de mãozinha */
+    background: transparent;      /* Fundo transparente */
+    border: none;                 /* Sem borda */
+    position: relative;           /* Para o indicador */
+    padding: 10px 29px;           /* Espaçamento interno */
+}
+
+/* Container dos inputs e ícones */
+.input-container {
+    position: relative;           /* Para posicionar o ícone dentro */
+    width: 80%;                   /* Largura menor para criar margem lateral */
+    margin-top: 20px;             /* Espaço entre os inputs */
+}
+
+/* Inputs do formulário */
+.input-container input {
+    border: none;                 /* Sem borda */
+    border-radius: 60px;          /* Bordas bem arredondadas */
+    padding: 8px 0 8px 35px;      /* Espaço para o ícone à esquerda */
+    outline: none;                /* Remove contorno ao focar */
+    width: 100%;                  /* Largura total do container */
+}
+
+/* Ícones dentro do input (e-mail, senha) */
+.input-container i {
+    position: absolute;           /* Posicionamento absoluto */
+    left: 10px;                  /* Distância da esquerda */
+    top: 50%;                    /* Centralizado verticalmente */
+    transform: translateY(-50%); /* Correção para centralização exata */
+    color: gray;                 /* Cor cinza para o ícone */
+}
+
+/* Botão de submit dos formulários */
+button[type="submit"] {
+    background: #660fc8;          /* Cor roxa */
+    color: white;                 /* Texto branco */
+    border-radius: 30px;          /* Bordas arredondadas */
+    width: 80%;                   /* Largura igual aos inputs para alinhamento */
+    border: none;                 /* Sem borda */
+    outline: none;                /* Remove contorno */
+    padding: 8px 0;               /* Espaçamento vertical */
+    font-size: 15px;              /* Tamanho da fonte */
+    margin-top: 40px;             /* Espaço acima do botão */
+    cursor: pointer;              /* Cursor de mãozinha */
+    align-self: center;           /* Garante centralização dentro do flex */
+}
+
+/* Container da checkbox e seu texto */
+.divCheck {
+    margin: 10px 0 0 5px;         /* Margem superior e esquerda */
+    width: 80%;                   /* Largura menor para alinhamento */
+    font-size: 13px;              /* Fonte pequena */
+}
+
+/* Posicionamento dos formulários para animação */
+#signin {
+    left: 0%;                    /* Quando ativo, fica visível */
+}
+
+#signup {
+    left: 100%;                  /* Quando não ativo, fica fora da tela */
+}
