@@ -2,24 +2,12 @@
   "name": "pagina-de-login",
   "version": "1.0.0",
   "type": "module",
-  "description": "Este é um projeto simples de página de login e cadastro com animação para alternar entre os formulários de **Sign In** e **Sign Up**. A interface é estilizada com **CSS moderno**, utiliza **FontAwesome** para ícones e um script em **JavaScript** para a animação.\r ---\r  Funcionalidades\r ✔️ Alternância suave entre Login e Cadastro\r ✔️ Ícones nos campos de entrada\r ✔️ Animações para transição\r ✔️ Design responsivo\r ---\r 🛠️ Melhorias Futuras\r ✅ Adicionar validação de campos\r ✅ Criar integração com um backend\r ✅ Melhorar responsividade para telas menores\r ---\r ## 🖥️ Tecnologias Utilizadas",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Gustavo-Debugs/pagina-de-login.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Gustavo-Debugs/pagina-de-login/issues"
-  },
-  "homepage": "https://github.com/Gustavo-Debugs/pagina-de-login#readme",
   "dependencies": {
     "@prisma/client": "^6.5.0",
+    "cors": "^2.8.5",
     "express": "^5.1.0"
   },
   "devDependencies": {
